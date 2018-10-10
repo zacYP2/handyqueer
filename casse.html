@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" /> </noscript>
+    <script charset="utf-8" src="https://ucarecdn.com/libs/widget/3.6.1/uploadcare.full.min.js"></script>
 </head>
 
 <body class="is-preload">
@@ -64,10 +65,17 @@
                             <label for="message">Message</label>
                             <textarea name="message" id="message" rows="3"></textarea>
                         </div>
+                        <div class="field">
+                            <label for="name"># COLORS</label>
+                            <input type="number" name="quantity" min="1" max="5"> </div>
+                        <div class="field">
+                            <label for="name"># prints</label>
+                            <input type="number" name="quantity" min="1" max="500"> </div>
                     </div>
+                    <input type="hidden" role="uploadcare-uploader" name="content" data-public-key="e7c54b361b4e37a8e8ee" data-images-only />
                     <ul class="actions">
                         <li>
-                            <input type="submit" value="Send" /> </li>
+                            <input style="margin-top: 36px;" type="submit" value="Send" /> </li>
                     </ul>
                 </form>
             </section>
@@ -86,10 +94,7 @@
                 </section>
             </section>
         </footer>
-        <!--	 Copyright 
-					<div id="copyright">
-						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
-					</div>--></div>
+    </div>
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
